@@ -87,6 +87,33 @@ namespace Web_Application
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
+        /// TextBox_SP1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_SP1;
+
+        /// <summary>
+        /// TextBox_SP2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_SP2;
+
+        /// <summary>
+        /// TextBox_SP3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_SP3;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>

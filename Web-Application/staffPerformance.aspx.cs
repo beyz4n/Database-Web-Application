@@ -16,6 +16,8 @@ namespace Web_Application
         {
             if(IsPostBack == false)
             {
+                Label1.Text = Session["Name"].ToString() + " " + Session["Surname"].ToString();
+                Label2.Text = Session["salesPersonID"].ToString();
                 string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ToString();
 
                 SqlConnection con = new SqlConnection(connectionString);
@@ -47,6 +49,22 @@ namespace Web_Application
         protected void LogoutButton(object sender, EventArgs e)
         {
             Response.Redirect("loginPage.aspx");
+        }
+
+        protected void ChangeScore(object sender, EventArgs e) 
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ToString();
+
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand("sp_UpdateScoreAccordingToSale", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@saleCount", SqlDbType.Int).Value = int.Parse(TextBox_SP3.Text); 
+            cmd.Parameters.Add("@addScore", SqlDbType.Float).Value = float.Parse(TextBox_SP2.Text) ;
+            cmd.Parameters.Add("@salesPersonID", SqlDbType.NVarChar).Value = TextBox_SP1.Text;
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
     }
