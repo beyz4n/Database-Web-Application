@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="products.aspx.cs" Inherits="Web_Application.products" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="myCustomers.aspx.cs" Inherits="Web_Application.myCustomers" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Table ID="Table1" runat="server"></asp:Table>
         </div>
     </form>
 </body>
