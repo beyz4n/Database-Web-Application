@@ -8,8 +8,45 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="navbar">
+            <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/myCustomers.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/products.aspx">About</asp:HyperLink>
+            <asp:HyperLink ID="lnkServices" runat="server" NavigateUrl="~/purchases.aspx">Services</asp:HyperLink>
+            <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/staffPerformance.aspx">Contact</asp:HyperLink>
+            
         </div>
+        <div>
+           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 547px" Width="337px">
+            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#00ffff" ForeColor="Black" HorizontalAlign="Right" />
+            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#00ffff" />
+            <SortedAscendingHeaderStyle BackColor="#00ffff" />
+            <SortedDescendingCellStyle BackColor="#00ffff" />
+            <SortedDescendingHeaderStyle BackColor="#242121" />
+        </asp:GridView>
+       
+        </div>
+        <div>
+          
+            <asp:Label ID="Label1" runat="server" Text="FullName:"></asp:Label>
+          
+        </div>
+
+
+
+        <p>
+            <asp:Label ID="Label2" runat="server" Text="Username:"></asp:Label>
+          
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Button1" runat="server" Height="56px" style="margin-left: 655px" Text="Edit Score" Width="134px" BackColor="#ffff66" />
+          
+            <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" />
+        </p>
     </form>
 </body>
 </html>
