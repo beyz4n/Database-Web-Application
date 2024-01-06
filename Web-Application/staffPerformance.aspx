@@ -9,10 +9,10 @@
 <body>
     <form id="form1" runat="server">
         <div class="navbar">
-            <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/myCustomers.aspx">Home</asp:HyperLink>
-            <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/products.aspx">About</asp:HyperLink>
-            <asp:HyperLink ID="lnkServices" runat="server" NavigateUrl="~/purchases.aspx">Services</asp:HyperLink>
-            <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/staffPerformance.aspx">Contact</asp:HyperLink>
+            <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/myCustomers.aspx">Customers</asp:HyperLink>
+            <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/products.aspx">Products</asp:HyperLink>
+            <asp:HyperLink ID="lnkServices" runat="server" NavigateUrl="~/purchases.aspx">Purchases</asp:HyperLink>
+            <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/staffPerformance.aspx">Staffs</asp:HyperLink>
             
         </div>
         <div>
