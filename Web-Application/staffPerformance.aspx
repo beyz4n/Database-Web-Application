@@ -45,7 +45,7 @@
         <p>
             <asp:Button ID="Button1" runat="server" Height="56px" style="margin-left: 655px" Text="Edit Score" Width="134px" BackColor="#ffff66" />
           
-            <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" />
+            <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
         </p>
     </form>
 </body>

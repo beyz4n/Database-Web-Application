@@ -97,18 +97,18 @@
             <img src="image.png" alt=""/>
              </div>
             <h2>Login Page</h2>
-            
+            <asp:Label ID="Label1" runat="server" ForeColor="Red" CssClass="error-message"></asp:Label>
             <div class="entering">
-            <label for="txtUsername">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Username:</label>
+            <label for="txtUsername"> Username:</label>
                  
             <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Height="35px" Width="378px"></asp:TextBox>
 
-            <label for="txtPassword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password:</label>
+            <label for="txtPassword"> Password:</label>
                 
             <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" CssClass="form-control" Height="35px" Width="391px"></asp:TextBox>
            </div>
             <div class="button">
-            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" CausesValidation="false"  Height="45px" style="margin-left: 152px; margin-right: 11px; margin-top: 177px" Width="213px"/>
+            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1Click" CausesValidation="false"  Height="45px" style="margin-left: 152px; margin-right: 11px; margin-top: 177px" Width="213px"/>
             </div>
            
            
