@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using System.Xml.Linq;
 
 
 namespace Web_Application
@@ -29,16 +30,23 @@ namespace Web_Application
                 SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
                 da.Fill(ds);
                 string password = ds.Tables[0].Rows[0]["password"].ToString();
+                string fname = ds.Tables[0].Rows[0]["Name"].ToString();
+                string lname = ds.Tables[0].Rows[0]["Surname"].ToString();
                 con.Close();
 
                 if (enteredPassword == password)
                 {
                     Label1.Text = "Login successful!";
+                    Session["Name"] = fname;
+                    Session["Surname"] = lname;
+                    Session["salesPersonID"] = enteredUsername;
                     if (enteredUsername == "s01") {
+
                         Response.Redirect("staffPerformance.aspx");
                     }
                     else
                     {
+
                         Response.Redirect("myCustomers.aspx");
                     }
 

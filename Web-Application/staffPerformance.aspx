@@ -41,15 +41,15 @@
           
         </p>
          
-          <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Salesperson ID"> </asp:TextBox >
-           <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Score"> </asp:TextBox >
-           <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Sale Count"> </asp:TextBox >
+          <asp:TextBox ID="TextBox_SP1" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Salesperson ID"> </asp:TextBox >
+           <asp:TextBox ID="TextBox_SP2" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Score"> </asp:TextBox >
+           <asp:TextBox ID="TextBox_SP3" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Sale Count"> </asp:TextBox >
         
         
         
         
         <p>
-            <asp:Button ID="Button1" runat="server" Height="56px" style="margin-left: 655px" Text="Edit Score" Width="134px" BackColor="#ffff66" />
+            <asp:Button ID="Button1" runat="server" Height="56px" style="margin-left: 655px" Text="Edit Score" Width="134px" BackColor="#ffff66" OnClick="ChangeScore" />
           
             <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
         </p>
