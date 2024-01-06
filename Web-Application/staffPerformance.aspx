@@ -40,8 +40,14 @@
             <asp:Label ID="Label2" runat="server" Text="Username:"></asp:Label>
           
         </p>
-        <p>
-            &nbsp;</p>
+         
+          <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Salesperson ID"> </asp:TextBox >
+           <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Score"> </asp:TextBox >
+           <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Sale Count"> </asp:TextBox >
+        
+        
+        
+        
         <p>
             <asp:Button ID="Button1" runat="server" Height="56px" style="margin-left: 655px" Text="Edit Score" Width="134px" BackColor="#ffff66" />
           
