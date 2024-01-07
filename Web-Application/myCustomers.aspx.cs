@@ -18,6 +18,32 @@ namespace Web_Application
             {
                 Label1.Text = Session["Name"].ToString() + " " + Session["Surname"].ToString();
                 Label2.Text = Session["salesPersonID"].ToString();
+
+                string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ToString();
+
+                SqlConnection con = new SqlConnection(connectionString);
+
+                try
+                {
+                    con.Open();
+                }
+                catch (Exception)
+                {
+                    con.Close();
+                    return;
+                    throw;
+                }
+
+
+                DataSet ds = new DataSet();
+                string sqlstr = "select * from Customer where SalespersonID='" + Session["salesPersonID"] + "' order by Name";
+
+                SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
+                da.Fill(ds);
+
+                GridView1.DataSource = ds;
+                GridView1.DataBind();
+                con.Close();
             }
         }
 
@@ -40,7 +66,7 @@ namespace Web_Application
 
 
             DataSet ds = new DataSet();
-            string sqlstr = "select top 10 * from Customer where SalespersonID='" + Session["salesPersonID"] +"' order by Name";
+            string sqlstr = "select top 10 * from Customer order by Name";
 
             SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
             da.Fill(ds);
