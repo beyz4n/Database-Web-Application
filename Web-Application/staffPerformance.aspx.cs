@@ -67,5 +67,33 @@ namespace Web_Application
             con.Close();
         }
 
+        protected void UpdateTable(object sender, EventArgs e)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ToString();
+
+            SqlConnection con = new SqlConnection(connectionString);
+
+            try
+            {
+                con.Open();
+            }
+            catch (Exception)
+            {
+                con.Close();
+                return;
+                throw;
+            }
+
+
+            DataSet ds = new DataSet();
+            string sqlstr = "select * from Salesperson order by Name";
+
+            SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
+            da.Fill(ds);
+
+            GridView1.DataSource = ds;
+            GridView1.DataBind();
+            con.Close();
+        }
     }
-}
+ }

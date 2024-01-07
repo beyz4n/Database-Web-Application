@@ -114,6 +114,15 @@ namespace Web_Application
         protected global::System.Web.UI.WebControls.TextBox TextBox_SP3;
 
         /// <summary>
+        /// Button3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button3;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
