@@ -8,63 +8,52 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
+            margin: 0; 
             padding: 0;
-            display: flex;
-            align-items: center;
-            height: 600px;
-             justify-content: center;
-            align-items: center;
-             min-height: 100px;
-   
         }
 
         .login-container {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 200px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: rgb(236, 164, 113);
-            
-             padding: 30px 40px;
-            height: 447px;
-        }
-
-        h2 {
-          color: #1f0a42;
-         font-size: 36px;
-          text-align: center;
-        }
-
-        label {
-            display: block;
-            margin-top: 0px;
-        }
-
-        .entering {
-            width: 100%;
+            background-color: #ef895f;
+            width: 400px;
+            margin: 100px auto;
             padding: 20px;
             
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .image img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+     
+
+        .entering label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+         .form-control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             box-sizing: border-box;
-             position: relative;
-            top: 9px;
-            left: 70px;
-             width: 377px;
-             height: 10px; 
-            
         }
 
         .button {
-            border-style: none;
-            border-color: inherit;
-            border-width: medium;
-            color: #4caf50;
-            padding: 30px;
-            border-radius: 3px;
-            cursor: pointer;
-            width: 100%;
-            height: 256px;
+            text-align: center;
         }
 
         .button:hover {
@@ -82,11 +71,20 @@
             margin-top: 12px;
         }
 
-        
-          .image {
-           text-align: center;
-    
+          #Button1 {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
         }
+
+       
 
     </style>
 </head>
@@ -105,10 +103,10 @@
 
             <label for="txtPassword"> Password:</label>
                 
-            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" CssClass="form-control" Height="35px" Width="391px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" CssClass="form-control" Height="35px" Width="378px"></asp:TextBox>
            </div>
             <div class="button">
-            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1Click" CausesValidation="false"  Height="45px" style="margin-left: 152px; margin-right: 11px; margin-top: 177px" Width="213px"/>
+            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1Click" CausesValidation="false"  Height="45px" style="margin-left: 0px; margin-right: 11px; margin-top: 21px" Width="213px"/>
             </div>
            
            
