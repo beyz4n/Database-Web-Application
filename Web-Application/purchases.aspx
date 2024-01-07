@@ -57,8 +57,8 @@
       <asp:TextBox ID="TextBoxp6" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Product Code"> </asp:TextBox >
        <asp:TextBox ID="TextBoxp7" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Amount"> </asp:TextBox >
        <asp:TextBox ID="TextBoxp9" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Payment Method"> </asp:TextBox >
-       <asp:TextBox ID="TextBoxp10" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Payment Price"> </asp:TextBox >
-         <asp:TextBox ID="TextBoxp11" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Rating"> </asp:TextBox >
+       <asp:TextBox ID="TextBoxp10" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Rating"> </asp:TextBox >
+         <asp:TextBox ID="TextBoxp11" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Customer ID"> </asp:TextBox >
 
 
 </p>
