@@ -1,6 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="myCustomers.aspx.cs" Inherits="Web_Application.myCustomers" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+    protected void GetCustomers(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -61,6 +69,7 @@
             height: 5px; /* Maintain aspect ratio */
         }
 
+
     </style>
 </head>
  
@@ -76,7 +85,7 @@
             
         </div>
         <div>
-           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 100px; margin-top: 150px; margin-bottom: 172px;" Width="337px">
+           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 100px; margin-top: 225px; margin-bottom: 172px;" Width="337px">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#00ffff" ForeColor="Black" HorizontalAlign="Right" />
@@ -86,7 +95,7 @@
             <SortedDescendingCellStyle BackColor="#00ffff" />
             <SortedDescendingHeaderStyle BackColor="#242121" />
         </asp:GridView>
-            <asp:Button ID="Buttonc3" runat="server" Text="Back To Customers"  OnClick="GetCustomers" BackColor="#ffff66" />
+           
        <div class="image">
 <img src="image.png" alt="" style="width: 131px; height: 121px; margin-left: 11px; margin-top: 22px"/>
  </div>
@@ -102,10 +111,11 @@
          <asp:Button ID="Button2" runat="server" Text="Logout"  OnClick="LogoutButton" BackColor="#ffff66" />
            </div>
             </div>
-         <div>
-            <asp:Button ID="Button1" runat="server" Text="Displays the top 10 customers" Style="margin-left: 578px; margin-top: 0px; margin-bottom: 15px;" Width="235px" OnClick="DisplayTop10Customer" Height="38px" BackColor="#ffff66" />
+         <div class="buttons">
+            <asp:Button ID="Button1" runat="server" Text="Displays the top 10 customers"  Width="235px" OnClick="DisplayTop10Customer" Height="35px" BackColor="#ffff66" style="margin-left: 338px" />
+                   
+      <asp:Button ID="Buttonc3" runat="server" Text="Back To Customers"  OnClick="GetCustomers" BackColor="#ffff66" Height="35px"  Width="232px" style="margin-left: 273px"/>
           </div> 
-        
-    </form>
+             </form>
 </body>
 </html>
