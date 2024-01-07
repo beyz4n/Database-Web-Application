@@ -86,6 +86,7 @@
             <SortedDescendingCellStyle BackColor="#00ffff" />
             <SortedDescendingHeaderStyle BackColor="#242121" />
         </asp:GridView>
+            <asp:Button ID="Buttonc3" runat="server" Text="Back To Customers"  OnClick="GetCustomers" BackColor="#ffff66" />
        <div class="image">
 <img src="image.png" alt="" style="width: 131px; height: 121px; margin-left: 11px; margin-top: 22px"/>
  </div>

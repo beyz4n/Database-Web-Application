@@ -60,6 +60,15 @@ namespace Web_Application
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// Buttonc3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Buttonc3;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -78,15 +87,6 @@ namespace Web_Application
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
         /// Button2 control.
         /// </summary>
         /// <remarks>
@@ -94,5 +94,14 @@ namespace Web_Application
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
