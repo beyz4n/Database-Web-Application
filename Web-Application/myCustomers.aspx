@@ -39,7 +39,7 @@
             <asp:Label ID="Label2" runat="server" Text="Username:"></asp:Label>
           
    
-            <asp:Button ID="Button1" runat="server" Text="Displays the top 10 customers" style="margin-left: 550px; margin-top: 0px" Width="276px" />
+            <asp:Button ID="Button1" runat="server" Text="Displays the top 10 customers" Style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="DisplayTop10Customer" />
           
    
             <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
