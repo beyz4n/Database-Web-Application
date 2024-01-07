@@ -36,7 +36,7 @@ namespace Web_Application
 
 
                 DataSet ds = new DataSet();
-                string sqlstr = "select * from Payment order by Date";
+                string sqlstr = "select p.SaleID, p.date, p.PaymentMethod, s.Amount, p.PaymentPrice, s.ProductCode, p.Rating, p.CustomerID\r\nfrom Payment p inner join Sale s on s.SaleID =p.SaleID order by Date desc";
 
                 SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
                 da.Fill(ds);
@@ -104,7 +104,7 @@ namespace Web_Application
 
 
             DataSet ds = new DataSet();
-            string sqlstr = "select * from Payment order by Date";
+            string sqlstr = "select p.SaleID, p.date, p.PaymentMethod, s.Amount, p.PaymentPrice, s.ProductCode, p.Rating, p.CustomerID\r\nfrom Payment p inner join Sale s on s.SaleID =p.SaleID order by Date desc";
 
             SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
             da.Fill(ds);

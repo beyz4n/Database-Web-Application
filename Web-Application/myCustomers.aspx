@@ -2,11 +2,6 @@
 
 <!DOCTYPE html>
 <script runat="server">
-
-    protected void GetCustomers(object sender, EventArgs e)
-    {
-
-    }
 </script>
 
 

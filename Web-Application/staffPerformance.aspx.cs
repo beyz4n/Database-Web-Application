@@ -35,7 +35,7 @@ namespace Web_Application
 
 
                 DataSet ds = new DataSet();
-                string sqlstr = "select * from Salesperson order by Name";
+                string sqlstr = "select st.Year, st.Month, s.salesPersonID, s.Name, s.Surname, s.Email,\ts.PhoneNumber, st.NumberOfCustomersServiced, st.Score, st.TotalRevenue\r\nfrom Salesperson s\r\n\tinner join StaffPerformance st on s.salesPersonID = st.SalesPersonID\r\norder by st.Year desc, st.Month desc, s.salesPersonID desc";
 
                 SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
                 da.Fill(ds);
@@ -86,7 +86,7 @@ namespace Web_Application
 
 
             DataSet ds = new DataSet();
-            string sqlstr = "select * from Salesperson order by Name";
+            string sqlstr = "select st.Year, st.Month, s.salesPersonID, s.Name, s.Surname, s.Email,\ts.PhoneNumber, st.NumberOfCustomersServiced, st.Score, st.TotalRevenue\r\nfrom Salesperson s\r\n\tinner join StaffPerformance st on s.salesPersonID = st.SalesPersonID\r\norder by st.Year desc, st.Month desc, s.salesPersonID desc";
 
             SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
             da.Fill(ds);

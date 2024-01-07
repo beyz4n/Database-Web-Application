@@ -36,7 +36,7 @@ namespace Web_Application
 
 
                 DataSet ds = new DataSet();
-                string sqlstr = "select * from Customer where SalespersonID='" + Session["salesPersonID"] + "' order by Name";
+                string sqlstr = "select c.CustomerID, c.MembershipType, c.Name, c.PhoneNumber, c.IsForeign, c.RegisterationDate, c.District, c.City, c.FullAddress from Customer c where SalespersonID='" + Session["salesPersonID"] + "' order by Name";
 
                 SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
                 da.Fill(ds);
@@ -66,7 +66,7 @@ namespace Web_Application
 
 
             DataSet ds = new DataSet();
-            string sqlstr = "select top 10 * from Customer order by Name";
+            string sqlstr = "select top 10 c.CustomerID, c.MembershipType, c.Name, c.PhoneNumber, c.IsForeign,  c.City, COUNT(p.PaymentPrice) totalPriceSold\r\nfrom Customer c\r\n\tinner join Payment p on c.CustomerID = p.CustomerID\r\ngroup by c.CustomerID, c.MembershipType, c.Name, c.PhoneNumber, c.IsForeign,  c.City\r\norder by COUNT(p.PaymentPrice) desc";
 
             SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
             da.Fill(ds);
@@ -100,7 +100,7 @@ namespace Web_Application
 
 
             DataSet ds = new DataSet();
-            string sqlstr = "select * from Customer where SalespersonID='" + Session["salesPersonID"] + "' order by Name";
+            string sqlstr = "select c.CustomerID, c.MembershipType, c.Name, c.PhoneNumber, c.IsForeign, c.RegisterationDate, c.District, c.City, c.FullAddress from Customer c where SalespersonID='" + Session["salesPersonID"] + "' order by Name";
 
             SqlDataAdapter da = new SqlDataAdapter(sqlstr, con);
             da.Fill(ds);
