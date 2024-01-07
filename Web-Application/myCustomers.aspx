@@ -76,7 +76,7 @@
             
         </div>
         <div>
-           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 547px; margin-top: 180px; margin-bottom: 172px;" Width="337px">
+           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 100px; margin-top: 150px; margin-bottom: 172px;" Width="337px">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#00ffff" ForeColor="Black" HorizontalAlign="Right" />
@@ -97,13 +97,14 @@
             <div class="username-label">
             <asp:Label ID="Label2" runat="server" Text="Username:"></asp:Label>
          </div>
+             <div>
+         <asp:Button ID="Button2" runat="server" Text="Logout"  OnClick="LogoutButton" BackColor="#ffff66" />
+           </div>
             </div>
          <div>
             <asp:Button ID="Button1" runat="server" Text="Displays the top 10 customers" Style="margin-left: 578px; margin-top: 0px; margin-bottom: 15px;" Width="235px" OnClick="DisplayTop10Customer" Height="38px" BackColor="#ffff66" />
           </div> 
-         <div>
-            <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" BackColor="#ffff66" />
-         </div>
+        
     </form>
 </body>
 </html>

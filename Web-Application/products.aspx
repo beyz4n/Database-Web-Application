@@ -68,6 +68,7 @@
             height: 5px; /* Maintain aspect ratio */
         }
 
+
     </style>
 </head>
 <body>
@@ -78,8 +79,8 @@
             <asp:HyperLink ID="lnkServices" runat="server" NavigateUrl="~/purchases.aspx">Purchasess</asp:HyperLink>
             
         </div>
-        <div>
-           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 547px; margin-top: 143px;" Width="337px">
+        <div >
+           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 100px; margin-top: 143px;" Width="337px">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#00ffff" ForeColor="Black" HorizontalAlign="Right" />
@@ -101,6 +102,10 @@
         <div class="username-label">
             <asp:Label ID="Label_prod2" runat="server" Text="Username:"></asp:Label>
           </div>
+        <div>
+            
+            <asp:Button ID="Button_prod2" runat="server" Text="Logout"  OnClick="LogoutButton" BackColor="#ffff66" />
+        </div>
           </div>
            <div class="textbox">
       <asp:TextBox ID="TextBox11" runat="server" CssClass="form-control" Height="35px" Width="374px" Text="Product Code"></asp:TextBox >
@@ -110,7 +115,7 @@
            <div>
             <asp:Button ID="Button_prod1" runat="server" Text="Update stock amount" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdateStockAmount" BackColor="#ffff66"  />
             </div>
-                 <div class="textbox">
+             <div class="textbox">
       <asp:TextBox ID="TextBox31" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Product Code"> </asp:TextBox >
       <asp:TextBox ID="TextBox41" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Price"> </asp:TextBox >
       
@@ -122,7 +127,6 @@
        
        
 
-            <asp:Button ID="Button_prod2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 61px" OnClick="LogoutButton" BackColor="#ffff66" />
             
         
     </form>

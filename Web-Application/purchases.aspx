@@ -79,7 +79,7 @@
             
         </div>
         <div>
-           <asp:GridView ID="GridViewpur1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 524px; margin-top: 163px;" Width="337px">
+           <asp:GridView ID="GridViewpur1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 100px; margin-top: 163px;" Width="337px">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#00ffff" ForeColor="Black" HorizontalAlign="Right" />
@@ -105,8 +105,10 @@
          
             
          </div>
+             <div>
+              <asp:Button ID="Buttonp2" runat="server" Text="Logout"  OnClick="LogoutButton" Height="31px" BackColor="#ffff66" />
               </div>
-          
+          </div>
            <div class="textbox">
        <asp:TextBox ID="TextBoxp1" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Critical Amount"> </asp:TextBox >
        <asp:TextBox ID="TextBoxp2" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Critical Price"> </asp:TextBox >
@@ -129,7 +131,7 @@
 
         <asp:Button ID="Buttonp4" runat="server" Text="Add payment" style="margin-left: 550px; margin-top: 45px" Width="276px" OnClick="AddPayment" Height="32px" BackColor="#ffff66" />
         <asp:Button ID="Buttonp5" runat="server" Text="Refresh Table" style="margin-left: 550px; margin-top: 56px" Width="276px" OnClick="UpdateTable" Height="30px" BackColor="#ffff66"/>
-            <asp:Button ID="Buttonp2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 162px" OnClick="LogoutButton" Height="31px" BackColor="#ffff66" />
+           
     </form>
 </body>
 </html>

@@ -56,9 +56,7 @@
             text-align: center;
         }
 
-        .button:hover {
-            background-color: #45a049;
-        }
+       
 
         .error-message {
             color: red;
