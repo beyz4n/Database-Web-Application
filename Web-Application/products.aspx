@@ -29,14 +29,14 @@
         </div>
         <div>
           
-            <asp:Label ID="Label1" runat="server" Text="FullName:"></asp:Label>
+            <asp:Label ID="Label_prod1" runat="server" Text="FullName:"></asp:Label>
           
         </div>
 
 
 
         <p>
-            <asp:Label ID="Label2" runat="server" Text="Username:"></asp:Label>
+            <asp:Label ID="Label_prod2" runat="server" Text="Username:"></asp:Label>
           
              </p>
  
@@ -45,7 +45,7 @@
      
 
 <p>
-            <asp:Button ID="Button1" runat="server" Text="Update stock amount" style="margin-left: 550px; margin-top: 0px" Width="276px" />
+            <asp:Button ID="Button_prod1" runat="server" Text="Update stock amount" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdateStockAmount" />
 
                  </p>
  
@@ -54,9 +54,10 @@
      
 
 <p>
-            <asp:Button ID="Button3" runat="server" Text="Update Product Price" style="margin-left: 550px; margin-top: 0px" Width="276px" />
-   
-            <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
+            <asp:Button ID="Button_prod3" runat="server" Text="Update Product Price" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdatePrice" />
+            <asp:Button ID="Button1" runat="server" Text="Refresh" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdateTable" />
+
+            <asp:Button ID="Button_prod2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
             
         </p>
     </form>

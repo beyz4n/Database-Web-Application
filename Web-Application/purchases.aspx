@@ -15,7 +15,7 @@
             
         </div>
         <div>
-           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 547px" Width="337px">
+           <asp:GridView ID="GridViewpur1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="245px" style="margin-left: 547px" Width="337px">
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#00ffff" ForeColor="Black" HorizontalAlign="Right" />
@@ -29,15 +29,15 @@
         </div>
         <div>
           
-            <asp:Label ID="Label1" runat="server" Text="FullName:"></asp:Label>
+            <asp:Label ID="Labelp1" runat="server" Text="FullName:"></asp:Label>
           
         </div>
 
 
 
         <p>
-            <asp:Label ID="Label2" runat="server" Text="Username:"></asp:Label>
-            <asp:Button ID="Button2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
+            <asp:Label ID="Labelp2" runat="server" Text="Username:"></asp:Label>
+            <asp:Button ID="Buttonp2" runat="server" Text="Logout" style="margin-left: 1134px; margin-top: 0px" OnClick="LogoutButton" />
             
         </p>
 
@@ -49,14 +49,13 @@
       <asp:TextBox ID="TextBoxp4" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Sale ID"> </asp:TextBox >
 
 </p>
-            <asp:Button ID="Button3" runat="server" Text="Update Payment Price" style="margin-left: 550px; margin-top: 0px" Width="276px" />
+            <asp:Button ID="Buttonp3" runat="server" Text="Update Payment Price" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdatePaymentPrice" />
 
                   <p>
  
       <asp:TextBox ID="TextBoxp5" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Sale ID"> </asp:TextBox >
       <asp:TextBox ID="TextBoxp6" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Product Code"> </asp:TextBox >
        <asp:TextBox ID="TextBoxp7" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Amount"> </asp:TextBox >
-      <asp:TextBox ID="TextBoxp8" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Date"> </asp:TextBox >
        <asp:TextBox ID="TextBoxp9" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Payment Method"> </asp:TextBox >
        <asp:TextBox ID="TextBoxp10" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Payment Price"> </asp:TextBox >
          <asp:TextBox ID="TextBoxp11" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Rating"> </asp:TextBox >
@@ -65,7 +64,8 @@
 </p>
 
 
-        <asp:Button ID="Button4" runat="server" Text="Add payment" style="margin-left: 550px; margin-top: 0px" Width="276px" />
+        <asp:Button ID="Buttonp4" runat="server" Text="Add payment" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="AddPayment" />
+        <asp:Button ID="Buttonp5" runat="server" Text="Refresh Table" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdateTable" />
 
 
 
