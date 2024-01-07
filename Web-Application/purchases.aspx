@@ -75,7 +75,7 @@
         <div class="navbar">
             <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/myCustomers.aspx">Customers</asp:HyperLink>
             <asp:HyperLink ID="lnkAbout" runat="server" NavigateUrl="~/products.aspx">Products</asp:HyperLink>
-            <asp:HyperLink ID="lnkServices" runat="server" NavigateUrl="~/purchases.aspx">Purchasess</asp:HyperLink>
+            <asp:HyperLink ID="lnkServices" runat="server" NavigateUrl="~/purchases.aspx">Purchases</asp:HyperLink>
             
         </div>
         <div>
@@ -116,7 +116,7 @@
        <asp:TextBox ID="TextBoxp4" runat="server" CssClass="form-control" Height="35px" Width="378px" Text="Sale ID"> </asp:TextBox >
            </div>
 
-            <asp:Button ID="Buttonp3" runat="server" Text="Update Payment Price" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdatePaymentPrice" BackColor="#ffff66"/>
+            <asp:Button ID="Buttonp3" runat="server" Text="Update Payment Price" style="margin-left: 550px; margin-top: 0px" Width="276px" OnClick="UpdatePaymentPrice" BackColor="#ffff66" Height="32px"/>
 
                   
          <div class="textbox">
@@ -130,7 +130,7 @@
 
 
         <asp:Button ID="Buttonp4" runat="server" Text="Add payment" style="margin-left: 550px; margin-top: 45px" Width="276px" OnClick="AddPayment" Height="32px" BackColor="#ffff66" />
-        <asp:Button ID="Buttonp5" runat="server" Text="Refresh Table" style="margin-left: 550px; margin-top: 56px" Width="276px" OnClick="UpdateTable" Height="30px" BackColor="#ffff66"/>
+        <asp:Button ID="Buttonp5" runat="server" Text="Refresh Table" style="margin-left: 550px; margin-top: 56px" Width="276px" OnClick="UpdateTable" Height="32px" BackColor="#ffff66"/>
            
     </form>
 </body>
