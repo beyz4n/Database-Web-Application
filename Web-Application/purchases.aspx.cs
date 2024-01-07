@@ -69,18 +69,17 @@ namespace Web_Application
 
         protected void AddPayment(object sender, EventArgs e)
         {
-            // TODO: bunun için stored prod yaz! date i getdate ile stored da hallet!
             string connectionString = ConfigurationManager.ConnectionStrings["conStr"].ToString();
 
             SqlConnection con = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("sp_InsertPayment", con);
+            SqlCommand cmd = new SqlCommand("sp_InsertSale", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@SaleID", SqlDbType.NVarChar).Value = TextBoxp5.Text;
-            cmd.Parameters.Add("@ProductCode", SqlDbType.NVarChar).Value = TextBoxp6.Text;
-            cmd.Parameters.Add("@Amount", SqlDbType.SmallInt).Value = int.Parse(TextBoxp7.Text);
-            cmd.Parameters.Add("@PaymentMethod", SqlDbType.NVarChar).Value = TextBoxp9.Text;
-            cmd.Parameters.Add("@PaymentPrice", SqlDbType.Float).Value = float.Parse(TextBoxp10.Text);
-            cmd.Parameters.Add("@CustomerID", SqlDbType.NVarChar).Value = TextBoxp11.Text;
+            cmd.Parameters.Add("@saleID", SqlDbType.NVarChar).Value = TextBoxp5.Text;
+            cmd.Parameters.Add("@productCode", SqlDbType.NVarChar).Value = TextBoxp6.Text;
+            cmd.Parameters.Add("@amount", SqlDbType.SmallInt).Value = int.Parse(TextBoxp7.Text);
+            cmd.Parameters.Add("@paymentMethod", SqlDbType.NVarChar).Value = TextBoxp9.Text;
+            cmd.Parameters.Add("@rating", SqlDbType.TinyInt).Value = int.Parse(TextBoxp10.Text);
+            cmd.Parameters.Add("@cusomerID", SqlDbType.NVarChar).Value = TextBoxp11.Text;
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
